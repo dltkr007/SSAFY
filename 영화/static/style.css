@@ -1,0 +1,27 @@
+@media (max-width: 1399px) {
+    header {
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    header {
+        width: 1320px;
+    }
+
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.card-img-top {
+    height: 100%;
+    
+}

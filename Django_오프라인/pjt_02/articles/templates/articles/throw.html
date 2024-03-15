@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <h1>Throw</h1>
+  {% comment %} articles라는 namespace에 속한 catch // URL 패턴의 식별자를 참조 {% endcomment %}
+  <form action="{% url 'articles:catch' %}" method="GET">
+    <input type="text" id="message" name="message">
+    <input type="submit">
+  </form>
+
+
+{% endblock content %}
+
+

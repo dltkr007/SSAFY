@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+<!-- load -->
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static "/style.css" %}">
+<header class="mx-auto">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static "images/header1.jpg" %}" class="d-block w-100" alt="header1">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static "images/header2.jpg" %}" class="d-block w-100" alt="header2">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static "images/header3.jpg" %}" class="d-block w-100" alt="header3">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+<br>
+<h1 class="text-center">Box Office</h1>
+
+<!-- md 768, lg 992 -->
+
+<section class="m-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static "images/movie1.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+            <div class="card-body">
+              <h5 class="card-title">Movie title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="{% static "images/movie2.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+              <div class="card-body">
+                <h5 class="card-title">Movie title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static "images/movie3.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+              <div class="card-body">
+                <h5 class="card-title">Movie title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static "images/movie4.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+              <div class="card-body">
+                <h5 class="card-title">Movie title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static "images/movie5.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+              <div class="card-body">
+                <h5 class="card-title">Movie title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="{% static "images/movie6.jpg" %}" class="card-img-top img-fluid" alt="images/movie">
+              <div class="card-body">
+                <h5 class="card-title">Movie title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+</section>
+
+{% endblock content %}
+

@@ -1,0 +1,17 @@
+@media (max-width: 992px) {
+    .navbar-expand-lg {
+        flex-direction: column;
+        
+        align-items: flex-start;
+        width: 100%;
+        border-bottom: none; /* 1000px 이하에서는 border-bottom 제거 */
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        
+        width: 100%;
+        margin-top: 0; /* 네비게이션 바 아이템들의 상단 간격 제거 */
+    }
+
+}
+

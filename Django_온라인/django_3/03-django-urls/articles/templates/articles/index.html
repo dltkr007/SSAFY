@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>안녕하세요, {{ name }}</h1>
+   {% comment %} app_name:url이름 변수1 변수2 {% endcomment %}
+  <a href="{% url "articles:dinner" %}">dinner</a>
+  <a href="{% url "articles:search" %}">search</a>
+  <a href="{% url "articles:throw" %}">throw</a>
+{% endblock content %}
